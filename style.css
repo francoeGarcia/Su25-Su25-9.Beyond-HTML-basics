@@ -1,0 +1,120 @@
+/* body selector*/
+body{
+    background: linear-gradient(180deg, #fdd5c1, #f2ac90,  #fdd5c1);
+    color: darkolivegreen;
+    text-align: center;
+    margin: 0;
+}
+/* h1 selector*/
+h1{
+    font-size: clamp(2.5rem, 2.35vw, 4.35rem);
+    color:teal;
+}
+/* h2 selector */
+h2{
+    font-size: clamp(2rem, 2vw, 4rem);
+}
+/* h3 selector */
+h3{
+    font-size: clamp(1.5rem, 1.5vw, 3.5rem);
+}
+
+/* headers float animation */
+h1, h2, h3 {
+    animation: float 2s ease-in-out infinite;
+    color:teal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.summary {
+    background-color: #f2ac90;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    border-bottom: solid 2px teal;
+}
+
+#zen-summary > p{
+    text-align: center;
+}
+
+.preamble{
+    margin-bottom: 1%;
+    background-color: #f0ad92;
+}
+
+footer {
+    width: 15%;
+    padding: 0;
+    margin: 10px;
+    display: inline-block;
+    border-bottom: double 3px teal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: teal;
+}
+
+p {
+    font-size: larger;
+    text-align: justify;
+    padding: 5px;
+}
+
+abbr {
+    color: teal;
+}
+
+.sidebar {
+    font-size: larger;
+    border-style:groove;
+    border-radius: 8px;
+    border-color: lightseagreen;
+    width: 50%;
+    display: inline-block;
+}
+
+header, .banner {
+    background-color: #f0ad92;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+/* div div div style and hover effect changes*/
+div div div{
+    margin-bottom: 1%;
+    background-color: #f0ad92;
+}
+
+div div div:hover, .preamble:hover{
+    background-color: #f9a889;
+    color:green;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+a:hover,
+div[role="article"]:hover h3,
+div[class="design-selection"]:hover h3,
+div[class="design-archives"]:hover h3,
+div[class="zen-resources"]:hover h3 {
+    color: #2aa198;
+}
+
+div[role="main"] > div[role="article"], .preamble{
+    margin: 2%;
+    border-style:groove;
+    border-radius: 8px;
+    border-color: lightseagreen;
+    width: auto;
+}
+
+/* float animation*/
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
