@@ -1,3 +1,9 @@
+/*
+Aded hover features to change size, background, and font color of current hovered bordered item, 
+added floating animation for headers, gradient background, changed abbreviations color,
+*/
+
+
 /* body selector*/
 body{
     background: linear-gradient(180deg, #fdd5c1, #f2ac90,  #fdd5c1);
